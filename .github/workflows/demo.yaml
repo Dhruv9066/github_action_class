@@ -14,5 +14,4 @@ jobs: # Define the jobs that will run in this workflow
     runs-on: ubuntu-latest # Define where this job will run
     steps: # Define the steps that will run in this job
       - name: Checkout repository # Name of the step
-        uses: actions/checkout@v6. # Use the checkout action to checkout the repository
- 
+        uses: actions/checkout@v6 # Use the checkout action to checkout the repository
