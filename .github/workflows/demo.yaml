@@ -23,7 +23,7 @@ jobs:
         run: cowsay -l
 
       - name: Generate Kitty Image
-        run: cowsay -f kitty "Run for cover, I am a cat..." > cat.txt
+        run: cowsay -f dragon "Run for cover, I am a cat..." > cat.txt
 
       - name: Display the Cat
         run: cat cat.txt
