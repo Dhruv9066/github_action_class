@@ -16,8 +16,8 @@ jobs:
       - name: Install cowsay
         run: sudo apt update && sudo apt install cowsay -y
 
-      - name: Generate dog image
-        run: cowsay -f dog "Run for cover, I am a dog..." > dog.txt
+      - name: Generate dragan image
+        run: cowsay -f cat "Run for cover, I am a dog..." > dog.txt
 
       - name: Display the dog
         run: cat dog.txt
