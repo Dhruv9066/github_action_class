@@ -1,29 +1,28 @@
 name: demo_workflow
-
 on:
   push:
-
 jobs:
   demo_job1:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-
       - name: Print Welcome Message
         run: echo "Hello, World! from the first job"
-
       - name: Install cowsay
         run: |
           sudo apt update
           sudo apt install -y cowsay
-
       - name: List Available Cowfiles
         run: cowsay -l
-
       - name: Generate Kitty Image
         run: cowsay -f dragon "Run for cover, I am a cat..." > cat.txt
-
       - name: Display the Cat
         run: cat cat.txt
+  demo_job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Running the store 
+        run: ls 
+      - name: Get ready my pizza
+        run : echo "Here is yout pizza"
