@@ -4,7 +4,6 @@ on:
     inputs:
       env_for_project:
         description: "Add name of the env"
-        default: "prod"
         required: true
         type: environment
 jobs:
