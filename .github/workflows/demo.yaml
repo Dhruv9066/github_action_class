@@ -1,6 +1,11 @@
 name: demo_workflow
 on:
-  push:
+  workflow_dispatch:
+    inputs:
+      env_for_project:
+        description: "Add name of the env"
+        default: "prod"
+        required: true
 jobs:
   demo_job1:
     runs-on: ubuntu-latest
@@ -17,7 +22,7 @@ jobs:
         run: cowsay -l
       - name: Generate Kitty Image
         run: cowsay -f dragon "Run for cover, I am a cat..." > cat.txt
-      - name: Display the Cat
+      - name: Display the cat
         run: cat cat.txt
   demo_job2:
     runs-on: ubuntu-latest
