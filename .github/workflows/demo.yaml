@@ -27,8 +27,6 @@ jobs:
   #       run: cat cat.txt
   demo_job2:
     runs-on: ubuntu-latest
-    needs:
-      - demo_job1
     steps:
       - name: Running the store 
         run: ls 
