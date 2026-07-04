@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-      - name: Print Welcome Message
+      - name: Print Welcome Message 
         run: echo "Hello, World! from the first job"
       - name: Install cowsay
         run: |
