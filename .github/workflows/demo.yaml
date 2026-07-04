@@ -3,7 +3,7 @@ name: demo_workflow
 on:
   workflow_dispatch:
     inputs:
-      environment:
+      dhruv_env:
         description: "Select the environment to deploy"
         required: true
         type: environment
