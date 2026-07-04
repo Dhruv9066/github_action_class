@@ -7,13 +7,13 @@ on:
         description: "Select the environment to deploy"
         required: true
         type: environment
-
+      
 jobs:
   demo_job2:
     runs-on: ubuntu-latest
 
     environment:
-      name: ${{ inputs.dhruv_env }}
+      name: ${{ github.event.inputs.dhruv_env}} 
 
     steps:
       - name: Get ready my pizza
