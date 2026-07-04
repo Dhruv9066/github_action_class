@@ -16,10 +16,6 @@ jobs:
       name: ${{ inputs.environment }}
 
     steps:
-      - name: Running the store
-        run: ls
-
       - name: Get ready my pizza
         run: |
           echo "Here is your pizza ${{ vars.NAME }}"
-          echo "Password is ${{ secrets.PASSWORD }}"
