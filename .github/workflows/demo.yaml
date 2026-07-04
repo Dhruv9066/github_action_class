@@ -27,4 +27,4 @@ jobs:
       - name: Running the store 
         run: ls 
       - name: Get ready my pizza
-        run : echo "Here is your pizza ${{vars.SURENAME}} and the name is ${{secret.NAME}}"
+        run : echo "Here is your pizza ${{vars.SURENAME}} and the name is ${{secrets.NAME}}"
