@@ -3,7 +3,7 @@ name: demo_workflow
 on:
   workflow_dispatch:
     inputs:
-      environment:
+      dhruv_env:
         description: "Select the environment to deploy"
         required: true
         type: environment
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     environment:
-      name: ${{ inputs.environment }}
+      name: ${{ inputs.dhruv_env }}
 
     steps:
       - name: Get ready my pizza
