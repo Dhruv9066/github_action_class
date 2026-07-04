@@ -6,6 +6,7 @@ on:
         description: "Add name of the env"
         default: "prod"
         required: true
+        type: environment
 jobs:
   demo_job1:
     runs-on: ubuntu-latest
