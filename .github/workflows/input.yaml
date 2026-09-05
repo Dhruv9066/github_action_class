@@ -1,0 +1,28 @@
+name: variable_workflow
+on:
+  workflow_dispatch:
+    inputs:
+      username:
+        type: string
+        description: Give the name of docker account
+        required: true
+      registry:
+        description: Image registry name
+        required: true
+        type: choice
+        options:
+          - nexus
+          - docker
+          - private
+env:
+  DOCKER_REPO: user
+jobs:
+  build:
+    name: my_build_job
+    runs-on: ubuntu-latest
+    steps:
+    - name: docker build
+      run: echo docker build -t ${{inputs.registry}}/${{inputs.username}}/$DOCKER_REPO:latest
+
+    - name: docker login 
+      run: echo docker login --username=${{inputs.username}} --password=${{secrets.DOCKER_PASSWORD}}
