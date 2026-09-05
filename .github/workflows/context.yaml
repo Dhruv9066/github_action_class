@@ -2,10 +2,9 @@ name: context_workflow
 on: workflow_dispatch
 jobs:
   build:
-    name: "context_display"
+    name: build job
     runs-on: ubuntu-latest
     steps:
-    - name: showing github_context
-      run: echo $GITHUB_CONTEXT
-    - name: showing sectet context
-      run: echo ${{secrets}}
+      - name: check main 
+        run: echo "hello from dhruv"
+        if:  ${{ github.ref == 'refs/heads/main' }}
