@@ -14,5 +14,5 @@ jobs:
         
       - name: working with cowsay 
         run: |
-          cowsay -f dragan "Run for the cover, save me dhruv" > dragan.txt
+          cowsay -f dragon "Run for the cover, save me dhruv" > dragon.txt
           cat dragan.txt
