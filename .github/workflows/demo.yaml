@@ -12,5 +12,5 @@ jobs:
       - name: cating 
         run: |
           ls
-          echo "Reading README.md"
-          cat README.md
+          cowsay -f dragan "Run for the cover, save me dhruv" > dragan.txt
+          cat dragan.txt
