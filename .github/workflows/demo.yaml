@@ -10,4 +10,4 @@ jobs:
         uses: actions/checkout@v7
 
       - name: cating 
-        run: cat README.ms
+        run: cat README.md
