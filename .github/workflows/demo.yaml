@@ -1,21 +1,9 @@
-name: demo_workflow
-
+name: my_workflow
 on:
-  workflow_dispatch:
-    inputs:
-      dhruv_env:
-        description: "Select the environment to deploy"
-        required: true
-        type: environment
-      
+  - push
 jobs:
-  demo_job2:
+  build:
     runs-on: ubuntu-latest
-
-    environment:
-      name: ${{ inputs.dhruv_env }} 
-
     steps:
-      - name: Get ready my pizza
-        run: |
-          echo "Here is your pizza ${{ vars.NAME }}"
+      - name: echoing to the CLI
+        run: echo "Hello from dhruv"
