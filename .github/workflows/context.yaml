@@ -8,4 +8,4 @@ jobs:
     - name: showing github_context
       run: $GITHUB_CONTEXT
     - name: showing sectet context
-      run: ${{sectets}}
+      run: ${{secrets}}
