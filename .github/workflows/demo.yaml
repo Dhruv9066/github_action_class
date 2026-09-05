@@ -5,5 +5,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: echoing to the CLI
-        run: echo "Hello from dhruv"
+    
+      - name: Sleeping 
+        run: sleep 30
+        
+      - name: echoing
+        run: echo "Hello from dhruv" && 
