@@ -5,9 +5,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    
-      - name: Sleeping 
-        run: sleep 30
-        
-      - name: echoing
-        run: echo "Hello from dhruv"
+
+      - name: checkout action
+        uses: actions/checkout@v7
+
+      - name: cating 
+        run: cat README.ms
