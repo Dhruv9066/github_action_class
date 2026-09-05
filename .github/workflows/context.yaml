@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: showing github_context
-      run: $GITHUB_CONTEXT
+      run: echo $GITHUB_CONTEXT
     - name: showing sectet context
-      run: ${{secrets}}
+      run: echo ${{secrets}}
