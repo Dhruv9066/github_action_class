@@ -17,6 +17,8 @@ jobs:
           cowsay -f dragon "Run for the cover, save me dhruv" > dragon.txt
           cat dragon.txt
   test:
+    needs:
+      - build
     name: 
     runs-on: ubuntu-latest
     steps:
