@@ -3,9 +3,9 @@ on:
   - push
 jobs:
   build:
+    name: build job
     runs-on: ubuntu-latest
     steps:
-
       - name: checkout action
         uses: actions/checkout@v7
 
@@ -16,3 +16,9 @@ jobs:
         run: |
           cowsay -f dragon "Run for the cover, save me dhruv" > dragon.txt
           cat dragon.txt
+  test:
+    name: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello from test
+        run: echo "Hello from test job "
