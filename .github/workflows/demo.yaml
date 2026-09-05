@@ -10,4 +10,4 @@ jobs:
         run: sleep 30
         
       - name: echoing
-        run: echo "Hello from dhruv" && 
+        run: echo "Hello from dhruv"
