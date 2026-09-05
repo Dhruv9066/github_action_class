@@ -10,4 +10,7 @@ jobs:
         uses: actions/checkout@v7
 
       - name: cating 
-        run: cat README.md
+        run: |
+          ls
+          echo "Reading README.md"
+          cat README.md
