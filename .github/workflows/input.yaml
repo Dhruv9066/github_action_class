@@ -1,4 +1,4 @@
-name: variable_workflow
+name: input_workflow
 on:
   workflow_dispatch:
     inputs:
