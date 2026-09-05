@@ -5,6 +5,6 @@ jobs:
     name: build job
     runs-on: ubuntu-latest
     steps:
-      - name: check main 
+      - name: check dev 
         run: echo "hello from dhruv"
-        if:  ${{ github.ref == 'refs/heads/main' }}
+        if:  ${{ github.ref == 'refs/heads/dev' }}
