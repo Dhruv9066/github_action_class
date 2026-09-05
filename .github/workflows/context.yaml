@@ -1,0 +1,11 @@
+name: context_workflow
+on: workflow_dispatch
+jobs:
+  build:
+    name: "context_display"
+    runs-on: ubuntu-latest
+    steps:
+    - name: showing github_context
+      run: $GITHUB_CONTEXT
+    - name: showing sectet context
+      run: ${{sectets}}
