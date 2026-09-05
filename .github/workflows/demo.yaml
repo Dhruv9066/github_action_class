@@ -10,8 +10,8 @@ jobs:
         uses: actions/checkout@v7
 
       - name: Installig cowsay
-        run: apt install cowsay -y
-
+        run: sudo apt-get install cowsay -y
+        
       - name: working with cowsay 
         run: |
           cowsay -f dragan "Run for the cover, save me dhruv" > dragan.txt
