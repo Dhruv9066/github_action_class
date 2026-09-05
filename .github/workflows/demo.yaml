@@ -1,4 +1,4 @@
-name: my_workflow
+name: basic_with_upload_downlaod_needs
 on:
   - push
 jobs:
