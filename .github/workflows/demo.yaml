@@ -21,8 +21,8 @@ jobs:
       - name: uploading artifact
         uses: actions/upload-artifact@v7
         with:
-          name: dhruv.txt
-          path: ./dragon.txt
+          name: dragon_artifact
+          path: dragon.txt
           archive: true
 
   test:
@@ -38,9 +38,9 @@ jobs:
       - name: downloading artifact
         uses: actions/download-artifact@v8
         with:
-          name: dhruv.txt
+          name: dragon_artifact
           
       - name: Echoing the artifact
         run: |
-          cat dhruv.txt
+          cat ./dragon.txt
           
