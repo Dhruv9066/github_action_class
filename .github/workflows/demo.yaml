@@ -9,8 +9,10 @@ jobs:
       - name: checkout action
         uses: actions/checkout@v7
 
-      - name: cating 
+      - name: Installig cowsay
+        run: apt install cowsay -y
+
+      - name: working with cowsay 
         run: |
-          ls
           cowsay -f dragan "Run for the cover, save me dhruv" > dragan.txt
           cat dragan.txt
