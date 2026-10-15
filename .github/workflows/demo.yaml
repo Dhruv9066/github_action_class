@@ -1,0 +1,18 @@
+name: dhruvworkflow
+on: 
+  push:
+  workflow_dispatch: 
+jobs:
+  demo_jobs:
+    runs-on: ubuntu-latest
+    name: myjob
+    steps:
+    - name: first_steps
+      uses: actions/checkout@v7
+    - name: second_steps
+      run: ls -l 
+    - name: third_steps
+      run: |
+        ls -l 
+        uptime
+        cat /etc/os-release
