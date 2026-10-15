@@ -1,0 +1,10 @@
+name: myworkflow
+on:
+  workflow_dispatch: 
+jobs:
+  demo1:
+    runs-on: ubuntu-latest
+    name: myjob
+    steps:
+      - name: 1st steps 
+        run: ls -l
