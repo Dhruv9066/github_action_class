@@ -4,6 +4,9 @@ on:
   workflow_dispatch: 
 jobs:
   demo_jobs:
+    concurrency:
+      group: myjob
+      cancel-in-progress: true
     runs-on: ubuntu-latest
     name: myjob
     steps:
