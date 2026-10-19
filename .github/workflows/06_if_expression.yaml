@@ -1,0 +1,13 @@
+
+name: expression_job
+
+on:
+  workflow_dispatch:
+
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: expression_step
+        if: ${{ github.ref == 'refs/heads/dev' }}
+        run: echo "hello from dhruv"
